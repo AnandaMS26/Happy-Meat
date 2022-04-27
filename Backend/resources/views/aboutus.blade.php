@@ -12,6 +12,9 @@
     <link rel="stylesheet" type="text/css" href="css/style1.css">
 </head>
 <body>
+    <div class="header">
+        @include('navbar')
+    </div>
     <div class="section">
         <div class="container">
             <div class="title">

@@ -18,15 +18,31 @@
             <div class="col-md-5 col-sm-12 login">
                 <div class="login-title"><h2>LOGIN</h2></div>
                 <div class="login-part">
-                    <form action="">
+                    <form method="POST" action="{{ route('login') }}">
+                        @csrf
+
                         <div class="box-login">
                             <h6>Email</h6>
-                            <input type="email" class="form-control" placeholder="Email">
+                            <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus>
+
+                            @error('email')
+                                <span class="invalid-feedback" role="alert">
+                                    <strong>{{ $message }}</strong>
+                                </span>
+                            @enderror
                         </div>
+
                         <div class="box-login">
                             <h6>Password</h6>
-                            <input type="password" class="form-control" placeholder="Password">
+                            <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" required autocomplete="current-password">
+
+                                @error('password')
+                                    <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $message }}</strong>
+                                    </span>
+                                @enderror
                         </div>
+                        
                         <button class="w-100 btn btn-lg mt-3 login-btn" type="submit">Login</button>
                         <small class="d-block mt-2"><a href="">Lupa password?</a> </small>
                         <p>Atau</p>

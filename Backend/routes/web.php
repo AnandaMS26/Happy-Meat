@@ -14,8 +14,18 @@ use App\Http\Controllers\Admin\DashboardController;
 |
 */
 
-Route::get('/', 'HomeController@index')
-    ->name('home');
+// Route::get('/', 'HomeController@index')
+//     ->name('homepage');
+Route::get('/', function(){
+    return view('homepage');
+});
+Route::get('/aboutus', function(){
+    return view('aboutus');
+});
+Route::get('/login', function(){
+    return view('login');
+});
+
 Route::get('/detail', 'DetailController@index')
     ->name('detail');
 Route::get('/checkout', 'CheckoutController@index')

@@ -11,23 +11,7 @@
 </head>
 <body>
     <div class="header">
-        <div class="header-logo"><a href="#"><img src="photos/logo.png" alt=""></a></div>
-        <div class="header-list list-left">
-            <ul>
-                <li><a href="#">Beranda</a></li>
-                <li><a href="#">Produk</a></li>
-                <li><a href="#">Artikel</a></li>
-                <li><a href="#">About</a></li>
-            </ul>
-        </div>
-        <div class="header-list list-right">
-            <ul>
-                <li><a href="#">Register</a></li>
-                <!-- <li><i class="fa fa-shopping-cart"></i></li> -->
-                <li><a href="#">Log In</a></li>
-                <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
-            </ul>
-        </div>
+        @include('navbar')
     </div>
     <!-- Content -->
     <div class="main">
