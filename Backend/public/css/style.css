@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Mulish:700,800,900');
+
 body{
     font-family: 'Mulish', sans-serif;
     margin: 0 auto;
@@ -51,7 +53,7 @@ body{
 .login{
     position: relative;
     background-color: #EBF0FA;
-    padding: 5% 5%;
+    padding: 5% 5% 8% 5%;
     text-align: center;
     color: #6D7D8B;
     border-radius: 12px;
@@ -70,20 +72,22 @@ body{
     color: #FC5043;
     margin-bottom: 40px;
 }
-.login-part button{
-    font-size: 14px;
-    font-weight: bold;
-}
 .login-part .login-btn{
     background-color: #FC5043;
     border: none;
     color: white;
+    font-size: 14px;
+    font-weight: bold;
+    height: 40px;
 }
-.login-part .signup-btn{
+.login-part .signup-btn, .acc-btn:hover{
     background-color: #fff;
     color: #FC5043;
     border: #FC5043 2px solid;
-    margin-bottom: 70px;
+    /* margin-bottom: 70px; */
+    font-size: 14px;
+    font-weight: 800;
+    height: 40px;
 }
 .login-part input{
     border: #BBC8D4 2px solid;
@@ -131,6 +135,10 @@ body{
     font-size: 14px;
     padding: 5% 5% 3% 5%;
 }
+.profile-title .active{
+    color: #FC5043;
+    font-weight: 800;
+}
 .profile-title p{
     margin-bottom: 7%;
     border-bottom: 2px solid #EBF0FA;
@@ -138,6 +146,9 @@ body{
 .profile-title a{
     text-decoration: none;
     color: #6D7D8B;
+}
+.profile-title .title:hover{
+    color: #3A353F;
 }
 
 .my-account{
@@ -160,9 +171,7 @@ body{
     color: white;
     font-size: 14px;
     font-weight: bold;
-}
-.acc-btn:hover{
-    color: white;
+    height: 40px;
 }
 .account-part input{
     border: #BBC8D4 2px solid;
@@ -200,7 +209,7 @@ body{
 .order tr{
     height: 35px;
 }
-.order a{
+.order .detail-btn{
     text-decoration: none;
     border: 2px solid #FC5043;
     padding: 1% 3.5%;
@@ -210,6 +219,12 @@ body{
 .order h4{
     font-size: 20px;
     color: black;
+}
+.order .detail-btn:hover{
+    padding: 1% 3.5%;
+    border-radius: 15%;
+    color: white;   
+    background-color: #FC5043;
 }
 
 /* DETAIL PRODUCT */
@@ -234,10 +249,6 @@ img{
     margin: 6% 0%;
     padding: 0% 5%;
 }
-/* .col-md-12 .desc-product{
-    float: right;
-    margin: 6% 8% 6% 0%;
-} */
 .desc-product a{
     text-decoration: none;
     color: #94A3B1;
@@ -245,6 +256,11 @@ img{
 .desc-product h4{
     font-size: 17px;
     margin: -1.5% 0% 6% 0%;
+    font-weight: 800;
+}
+.desc-product h2{
+    font-weight: 800;
+    color: #595668;
 }
 .desc-product a:hover{
     color: #595668;
@@ -272,7 +288,57 @@ img{
     background-color: white;
     color: #FC5043;
     border: #FC5043 2px solid;
+    font-weight: 800;
 }
 button:focus{
     outline: none;
+}
+
+/* DETAIL ORDER */
+.detail-order{
+    position: absolute;
+    border: #94A3B1 2px solid;
+    border-radius: 20px;
+    text-align: center;
+    padding: 2% 6%;
+    left: 50%;
+    transform: translate(-50%);
+    margin-top: 2%;
+}
+.detail-order-title{
+    text-align: center;
+    color: #3A353F;
+    font-weight: 800;
+}
+.detail-order h5{
+    font-size: 20px;
+    color: #595668;
+    font-weight: 800;
+}
+.detail-order p{
+    font-size: 14px;
+    color: #6D7D8B;
+}
+.order-content{
+    margin-top: 5%;
+    padding-top: 1%;
+}
+.detail-order button{
+    width: 100%;
+    background-color: #FC5043;
+    height: 38px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    color: white;
+    margin: 8% 0%;
+}
+.detail-order button:hover{
+    background-color: #fff;
+    color: #FC5043;
+    border: #FC5043 2px solid;
+    /* margin-bottom: 70px; */
+    font-size: 16px;
+    font-weight: 800;
+    height: 38px;
 }
