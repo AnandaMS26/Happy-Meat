@@ -12,12 +12,16 @@
     <link rel="stylesheet" type="text/css" href="css/style1.css">
 </head>
 <body>
-        <div class="card border-warning mb-5">
-            <div class="card-header" style="background-color: orangered; color: white;">
+    <div class="header">
+        @include('navbar')
+    </div>
+    <div class="main">
+        <div class="card border-warning mb-3">
+            <div class="card-header">
                 <h3>10 Secret Tips for Managing Report Team</h3>
                 <p>Danielo Adnan | 25 February 2022</p>
             </div>
-            <div class="card-body" style="border-color: orangered;">
+            <div class="card-body">
               <img class="imgcenter" src="img/meat3.png" alt="Happy Meat" style="display: flex;">
                 <p class="card-text mt-3">
                     Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
@@ -38,6 +42,7 @@
                 </p>  
             </div>
         </div>
-        <button style="width: 10%; margin-left: 15%;">Back</button>
+        <button style="width: 10%;">Back</button>
+    </div>
 </body>
 </html>

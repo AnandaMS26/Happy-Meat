@@ -1,19 +1,52 @@
-*{
+.main{
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
 
+/* NAVBAR */
+.header{
+    position: fixed;
+    width: 88%;
+    z-index: 10;
+    background-color: white;
+    height: 85px;
+}
+.header li{
+    list-style: none;
+}
+.header-logo {
+    float: left;
+} 
+.list-left li {
+    float: left;
+    padding: 20px 35px 20px 0px;
+}
+.list-right li {
+    float: right;
+    padding: 20px 10px;
+}
+.header img{
+    position: relative;
+    width: 80%;
+    top: -8px;
+}
+.header a{
+    text-decoration: none;
+    color: #6D7D8B;
+    font-size: 15px;
+}
+/*  */
 .section{
     width: 100%;
 }
 
 .section .container{
-    width: 80%;
+    width: 100%;
     display: block;
     margin: 0px auto;
-    padding: 50px;
+    /* padding: 50px; */
 }
 
 .section .container .row p{
@@ -24,7 +57,7 @@
 .container .title{
     width: 100%;
     margin-bottom: 50px;
-    margin-top: 5%;
+    /* margin-top: 5%; */
 }
 
 .container .title h1{
@@ -45,6 +78,12 @@
 .image-section img{
     width: 100%;
     height: auto;
+}
+
+.image-responsive{
+    display: block;
+    height: auto;
+    width: auto;
 }
 
 .content .article p{
@@ -70,7 +109,7 @@ p{
 }
 
 .team-section .container .row{
-    width: 80%;
+    width: 100%;
     margin: auto;
 }
 
@@ -110,20 +149,20 @@ p{
 }
 
 .team-section .container .row .col img{
-    height: 200px;
-    width: 200px;
+    height: auto;
+    width: auto;
     border-radius: 50%;
     border: 6px solid #fff;
-    margin-left: 20px;
+    /* margin-left: 20px; */
     padding: 10px;
 }
 
 
 /* Cart */
 .cart-page{
-    margin: 80px auto;
+    width: 80%;
+    margin: 10px auto;
 }
-
 table{
     width: 100%;
     border-collapse: collapse;
@@ -132,6 +171,13 @@ table{
 .cart-info{
     display: flex;
     flex-wrap: wrap;
+}
+
+.cart-info p{
+    color: orangered;
+}
+.cart-info .info{
+    margin-top: 30px;
 }
 
 th{
@@ -185,8 +231,15 @@ button{
 }
 
 /* Detail Artikel */
-.card{
-    margin-left: 15%;
-    margin-right: 15%;
-    margin-top: 50px;
+.card-header{
+    background-color: orangered; 
+    color: white;
+}
+.card-body{
+    border-color: orangered;
+}
+.card-body img{
+    width: auto;
+    height: auto;
+    float: center;
 }

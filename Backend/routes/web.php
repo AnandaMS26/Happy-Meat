@@ -14,17 +14,12 @@ use App\Http\Controllers\Admin\DashboardController;
 |
 */
 
-// Route::get('/', 'HomeController@index')
-//     ->name('homepage');
 Route::get('/', function(){
     return view('homepage');
 });
 Route::get('/aboutus', function(){
     return view('aboutus');
 });
-// Route::get('/login', function(){
-//     return view('login1');
-// });
 Route::get('/user-login', function(){
     return view('login');
 });
@@ -42,6 +37,15 @@ Route::get('/my-order', function(){
 });
 Route::get('/detail-order', function(){
     return view('detail_order');
+});
+Route::get('/checkout-order', function(){
+    return view('checkout');
+});
+Route::get('/mycart', function(){
+    return view('cart');
+});
+Route::get('/detail-artikel', function(){
+    return view('detail_artikel');
 });
 
 Route::get('/detail', 'DetailController@index')

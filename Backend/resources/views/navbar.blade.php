@@ -17,7 +17,7 @@
                 <li><a href="/">Beranda</a></li>
                 <li><a href="#">Produk</a></li>
                 <li><a href="#">Artikel</a></li>
-                <li><a href="aboutus">About</a></li>
+                <li><a href="/aboutus">About</a></li>
             </ul>
         </div>
         <div class="header-list list-right">
@@ -25,7 +25,7 @@
                 <li><a href="/user-register">Register</a></li>
                 <!-- <li><i class="fa fa-shopping-cart"></i></li> -->
                 <li><a href="/user-login">Log In</a></li>
-                <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                <li><a href="/mycart"><i class="fa fa-shopping-cart"></i></a></li>
             </ul>
         </div>
     </div>
