@@ -75,12 +75,16 @@
               </div>
               <div class="card-content-product">
                 <h2 class="heading-card-product">
-                  Boneless prime rib | Miyazakgyu Japanese Wagyu
+                  <a href="/detail-product">Boneless prime rib | Miyazakgyu Japanese Wagyu</a>
                 </h2>
+                <p class="caption-card">
+                    There are 10 secret tips that you have to know for managing
+                    your team remotely.
+                  </p>
                 <div class="price-cart-card">
                   <div class="price-card">Rp.290000/kg</div>
                   <div>
-                    <a href="#" class="buy"
+                    <a href="mycart" class="buy"
                       ><i class="fas fa-shopping-cart"></i>Add</a
                     >
                   </div>
@@ -91,12 +95,16 @@
               <div class="card-thumbnail-product-2"></div>
               <div class="card-content-product">
                 <h2 class="heading-card-product">
-                  Boneless prime rib | Miyazakgyu Japanese Wagyu
+                  <a href="/detail-product">Boneless prime rib | Miyazakgyu Japanese Wagyu</a>
                 </h2>
+                <p class="caption-card">
+                    There are 10 secret tips that you have to know for managing
+                    your team remotely.
+                  </p>
                 <div class="price-cart-card">
                   <div class="price-card">Rp.290000/kg</div>
                   <div>
-                    <a href="#" class="buy"
+                    <a href="mycart" class="buy"
                       ><i class="fas fa-shopping-cart"></i>Add</a
                     >
                   </div>
@@ -107,8 +115,12 @@
               <div class="card-thumbnail-product-3"></div>
               <div class="card-content-product">
                 <h2 class="heading-card-product">
-                  Boneless prime rib | Miyazakgyu Japanese Wagyu
-                </h2>
+                    <a href="/detail-product">Boneless prime rib | Miyazakgyu Japanese Wagyu</a>
+                  </h2>
+                  <p class="caption-card">
+                      There are 10 secret tips that you have to know for managing
+                      your team remotely.
+                    </p>
                 <div class="price-cart-card">
                   <div class="price-card">Rp.290000/kg</div>
                   <div>
