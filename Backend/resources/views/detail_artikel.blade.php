@@ -42,7 +42,8 @@
                 </p>  
             </div>
         </div>
-        <button style="width: 10%;">Back</button>
+        <a href="/article"><button style="width: 10%;">Back</button></a>
+        
     </div>
 </body>
 </html>

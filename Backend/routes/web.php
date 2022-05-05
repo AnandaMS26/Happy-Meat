@@ -47,6 +47,12 @@ Route::get('/mycart', function(){
 Route::get('/detail-artikel', function(){
     return view('detail_artikel');
 });
+Route::get('/product', function(){
+    return view('produk');
+});
+Route::get('/article', function(){
+    return view('artikel');
+});
 
 Route::get('/detail', 'DetailController@index')
     ->name('detail');
